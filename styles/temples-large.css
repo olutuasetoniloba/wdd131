@@ -1,0 +1,45 @@
+temple-large.css
+
+main {
+  padding: 10px;
+}
+
+main h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+figure img {
+  width: 75%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
